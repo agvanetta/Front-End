@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/registro" method='POST'>
+
+        <div>
+            <label for='usuario'> Nombre: </label>
+            <input type="text" name="Usuario" id="usuario">
+        </div>
+        <div>
+            <label for='password'> Contraseña: </label>
+            <input type="password" name="Contraseña " id='password'>
+        </div>
+        <div>
+            <label for='mail'> Email: </label>
+            <input type="email" name="Email" id="mail">
+        </div>
+        <div>
+            <label for='tel'> Telefono: </label>
+            <input type=" tel" name="Telefono " id='tel'>
+        </div>
+        <div>
+            <label for='edad'> Edad: </label>
+            <input type="number " name="Edad " id='edad'>
+        </div>
+        <div>
+            <label for="objetivo"> Objetivo de inversion: </label>
+            <textarea name="objetivo" id="objetivo" cols="100" rows="5">  </textarea>
+        </div>
+        <label> Seleccione horizonte de inversion </label>
+        <select name="Objetivos" id="">
+            <option value="#ff0000" > Corto plazo </option>
+            <option value=""> Mediano plazo </option>
+            <option value=""selected> Largo plazo </option>
+        </select>
+        <button type='submit'> Enviar </button>
+        <button type="reset" > Cancelar </button>
+        <input type="submit" value="Enviar">
+
+        <label> Invertis? </label>
+        <input type="radio" name="mascota" value="Si"> SI
+        <input type="radio" name="mascota" value="No"> NO
+
+        <label> ¿Con que empresa te identificas? </label> 
+        <input type="checkbox" name="hobby" value='Apple'> Apple
+        <input type="checkbox" name="hobby" value='Tesla'>Tesla
+        <input type="checkbox" name="hobby" value='Coca-Cola'> Coca-Cola
+        <input type="submit" value="Enviar">
+        
+        <input type="date" name="fecha">
+
+        <div> 
+            <label> Selecciona una foto de perfil !</label>
+            <input type="file" name='avatar' accept='jpg.' >
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

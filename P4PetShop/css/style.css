@@ -1,0 +1,325 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*HEADER*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 1)
+    
+}
+.header p {
+    margin-left: 90px;
+    color:  rgba(243, 243, 243, 1);
+    
+}
+.selector{
+    margin: 10px;
+    background-color: rgba(34, 34, 34, 1);
+    color:#ffff; 
+    border: none;
+}
+
+.navBar{
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(240, 168, 62, 1) ; 
+    color:  rgba(60, 35, 19, 1);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.navBarTitulo{
+    display: flex;
+    align-items: center;
+    margin-left: 58px;
+}
+
+.navBar span{
+    color:  rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+}
+.navBar ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    
+
+}
+.navBar a ,i{
+    margin: 5px;
+    list-style: none; 
+    color: rgba(255, 255, 255, 1);
+
+}
+li{
+    margin: 5px;
+    list-style: none;
+}
+.icono_ham{
+    display: none;
+}
+/*MAIN*/
+.banner{
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    justify-content: center;
+    background-color: 83CCDF;
+    background-image: url(/FrontEnd/P4PetShop/img/foto.png);
+    height: 400px;
+    width: 100%;
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner button{
+    margin-right: 117px;
+}
+.banner p{
+    padding-right: 95px;
+
+}
+.textH2 {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 5px;
+    background-color: #ffff;
+    margin: 12px;
+}
+    
+    
+
+.pYb{
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 12px;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    background-color:  #F0A83E;
+    margin: 15px 23px;
+    padding: 15px 23px;
+    color: #ffff;
+    cursor: pointer;
+    outline: none;
+}
+.section2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.lista2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #F0A83E;
+    margin-top: 20px ;
+}
+.garra{
+    width: 67px;
+    height: 71px;
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+    
+}
+.card{
+    background-color: rgba(251, 250, 246, 1);
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 20px;
+    text-align: center;
+}
+.card h3{
+    font-weight: 700;
+    font-size: 15px;
+    color:rgba(60, 35, 19, 1);
+    
+}
+.card p{
+    font-size: 15px;
+    color:  rgba(240, 168, 62, 1);
+    padding: 5px;
+
+}
+.form_contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form_contacto h2{
+    color:  rgba(60, 35, 19, 1);
+    text-align: center;
+    margin-top: 60px;
+}
+.input_contacto{
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color:  rgba(60, 35, 19, 1);
+    margin: 5px;
+}
+.boton1_contacto{
+    width: 110px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #F0A83E;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+.boton2_contacto{
+    width: 110px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgba(138, 135, 135, 1);
+    margin: 5px;
+    margin-bottom: 75px;
+    border: none;
+    cursor: pointer;
+}
+
+/*---FOOTER---*/
+.footer_suscribe{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border: none;
+}
+.icon_class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.input_text{
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 270px;
+}
+.boton_suscribe{
+    width: 80px;
+    height: 34px;
+    border-radius: 15px;
+    border: none;
+    background: rgba(60, 35, 19, 1);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 284px;
+    background-color:  rgba(60, 35, 19, 1);
+    color:rgba(255, 255, 255, 1);
+    
+}
+.finalText{
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin-right: 70px;
+}
+.finalText span{
+    
+    color: rgba(240, 168, 62, 1);
+}
+.contenedor_divsInformacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.footer_informacion{
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 70px;
+}
+.informacion_texto{
+    padding-left: 20px;
+}
+.p_footer{
+    font-size: 10px;
+    color: rgba(138, 135, 135, 1);
+
+}
+
+.rights{
+    background-color: rgba(34, 34, 34, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    height: 20px;
+}
+::placeholder{
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    .header{
+        display: none;
+    }
+    .navBar{
+        justify-content: space-evenly;
+    }
+    .navBar ul{
+        display: none;
+    }
+    .icono_ham{
+        display: block;
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    .footer_suscribe{
+        flex-direction: column;
+        height: 100px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .finalText{
+        position: absolute;
+        margin-left: 6rem;
+    }
+    .contenedor_divsInformacion{
+        margin-top: 2.5rem;
+    }
+    
+}
+    
