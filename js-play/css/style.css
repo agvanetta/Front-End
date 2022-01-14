@@ -1,0 +1,18 @@
+body {
+    background-color: #34405e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#map {
+    width: 400px;
+    height: 400px;
+}
