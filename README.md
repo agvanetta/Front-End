@@ -1,4 +1,4 @@
-# Front-End
+# Front-End I
 Proyectos correspondientes a Front I II y III
 
 1- Simulacion de un CV : https://agvanetta.github.io/Front-End/P3CVPropio/
@@ -12,3 +12,12 @@ Proyectos correspondientes a Front I II y III
 5- Pagina con formulario de Login: https://agvanetta.github.io/Front-End/P7FormularioHeroes
 
 6- Pagina de Inversiones en bolsa :  https://agvanetta.github.io/Front-End/Proyecto
+
+# FrontEndII
+Proyectos HTML + CSS + JS
+
+Juego | La busqueda del tesoro : https://agvanetta.github.io/Front-End/js-play/
+
+Proyecto con Formulario : https://agvanetta.github.io/Front-End/js-entregable/
+
+Cards "Modo Oscuro" : https://agvanetta.github.io/Front-End/js-pocoyo/
