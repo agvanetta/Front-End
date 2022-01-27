@@ -24,6 +24,8 @@ Proyecto con Formulario : https://agvanetta.github.io/Front-End/js-entregable/
 
 Cards "Modo Oscuro" : https://agvanetta.github.io/Front-End/js-pocoyo/
 
+InverLatam : https://agvanetta.github.io/Front-End/InverLatam (Consume info de API)
+
 # FrontEnd III
 
 Inicia Marzo 2022
