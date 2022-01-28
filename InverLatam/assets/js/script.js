@@ -9,8 +9,8 @@ window.onload = function () {
         console.log(informacion[0].casa.nombre);
         var dolarCompra = informacion[0].casa.compra;
         var dolarVenta =  informacion[0].casa.venta;
-        var dolarBCompra = informacion[4].casa.compra;
-        var dolarBVenta =  informacion[4].casa.venta;
+        var dolarBCompra = informacion[1].casa.compra;
+        var dolarBVenta =  informacion[1].casa.venta;
         var dolarMCompra = informacion[3].casa.compra;
         var dolarMVenta =  informacion[3].casa.venta;
 
