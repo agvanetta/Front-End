@@ -15,9 +15,9 @@ window.onload = function () {
         var dolarMVenta =  informacion[3].casa.venta;
 
 
-        document.getElementById("dolarOficial").innerHTML += `: Compra $ ${dolarCompra} - Venta $ ${dolarVenta}`
+        document.getElementById("dolarOficial").innerHTML += `: $${dolarCompra} / $${dolarVenta}`
         document.getElementById("dolarBlue").innerHTML += `: Compra $ ${dolarBCompra} - Venta $ ${dolarBVenta}`
-        document.getElementById("dolarBolsa").innerHTML += `: Compra $ ${dolarMCompra} - Venta $ ${dolarMVenta}`
+        document.getElementById("dolarBolsa").innerHTML += `: C $ ${dolarMCompra} - V $ ${dolarMVenta}`
 
       })
       .catch(function (error) {

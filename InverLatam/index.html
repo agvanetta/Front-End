@@ -51,7 +51,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Acciones</a></li>
+          <li><a class="nav-link scrollto" href="analisistecnico.html">Análisis técnico</a></li>
           <li><a class="nav-link scrollto" href="#services">Plataformas</a></li>
           <li><a class="nav-link scrollto" href="#team">Herramientas</a></li>
           <li class="dropdown"><a href="#"><span>Indices</span> <i class="bi bi-chevron-down"></i></a>
@@ -72,17 +72,68 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="analisistecnico.html" id="dolar" class="get-started-btn scrollto">Análisis técnico</a>
+      <a id="dolarOficial" class="get-started-btn scrollto">Dólar</a>
 
     </div>
-    <span id="navbar2" class="navbar order-last order-lg-0">
+
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "description": "Mercadolibre",
+      "proName": "NASDAQ:MELI"
+    },
+    {
+      "description": "Globant",
+      "proName": "NYSE:GLOB"
+    },
+    {
+      "description": "Tesla",
+      "proName": "NASDAQ:TSLA"
+    },
+    {
+      "description": "Apple",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "Microsoft",
+      "proName": "NASDAQ:MSFT"
+    },
+    {
+      "description": "IBM",
+      "proName": "NYSE:IBM"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "es"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<!-- 
+     <span id="navbar2" class="navbar order-last order-lg-0"> 
       <ul>
         <li><a class="nav-link" id="dolarOficial">Dólar Oficial</a></li>
         <li><a class="nav-link" id="dolarBlue">Dólar Blue</a></li>
         <li><a class="nav-link" id="dolarBolsa">Dólar CCL</a></li>
         <li><a class="nav-link" id="BTC">Bitcoin/USD</a></li>
       </ul>
-    </span>
+    </span> -->
+  
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
