@@ -769,7 +769,7 @@ section {
 /* Perfil del inversor ------------------------------------------  */
 
 #CONSERVADOR, #MODERADO, #AGRESIVO{
-  padding: 0px 12px 60px 12px;
+  padding: 0px 12px 0px 12px;
 }
 
 
