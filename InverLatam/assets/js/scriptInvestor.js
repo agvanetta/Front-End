@@ -9,12 +9,15 @@ const respuestas_box = document.querySelector(".respuestas_ind");
 const box_respuesta = document.querySelector(".section");
 const barra_progreso = document.querySelector("#barra_progreso");
 const elementos = document.getElementsByName("pregunta");
+const container = document.querySelector(".container");
+const parrafo = document.querySelector(".parrafo");
+const titulo = document.querySelector(".titulo");
+const row = document.querySelector("#row");
 
-// aceptar_v2.onclick = () => {
-//   texto_encima.innerHTML = "";
-//   aceptar_v2.innerHTML = "";
-//   texto_encima.removeAttribute("class");
-// };
+// Tipos de perfiles
+const conservador = document.querySelector("#CONSERVADOR")
+const moderado = document.querySelector("#MODERADO")
+const agresivo = document.querySelector("#AGRESIVO")
 
 var i = 1;
 var resultado_final = 0;
@@ -26,54 +29,47 @@ boton_siguiente.onclick = () => {
     var widht_bar = ((i + 1) * 100) / 8;
     var resultado = "width:" + widht_bar + "%";
     barra_progreso.setAttribute("style", resultado);
-    console.log(widht_bar);
     // recorrer y almacenar/sumar el dato para resultado final
     elementos.forEach(function (elemento) {
       if (elemento.checked == true) {
         resultado_final += parseInt(elemento.value);
       }
     });
-
     // escribe html
     barra_progreso.innerHTML = `${i + 1} de 8`;
     preguntas_texto.innerHTML = "<span>" + preguntas[i].pregunta + "</span>";
-
     lista_de_opciones.innerHTML =
       " <label for=radio1>" + preguntas[i].respuestas.a + "</label>";
     lista_de_opciones2.innerHTML =
       " <label for=radio2>" + preguntas[i].respuestas.b + "</label>";
     lista_de_opciones3.innerHTML =
       " <label for=radio3>" + preguntas[i].respuestas.c + "</label>";
-
     i++;
     boton_siguiente.innerHTML = "Siguiente";
-
     // El indice es igual a la cantida de pregunta, finaliza el cuestionario y ejecuta:
   } else {
-    var inversorTipo = "";
+    elementos.forEach(function (elemento) {
+      if (elemento.checked == true) {
+        resultado_final += parseInt(elemento.value);
+      }
+    });
+
+    // Sacar
+    box_respuesta.setAttribute("style", "display: none");
+    barra_progreso.setAttribute("style", "display: none");
+    parrafo.setAttribute("style", "display: none");
+    titulo.setAttribute("style", "display: none");
+    row.setAttribute("style", "display: none");
+    // Fin Sacar
     if (resultado_final <= 13) {
-      inversorTipo = "Conservador";
+      conservador.removeAttribute("style")
+      //window.open("modelotipo.html")
     } else if (resultado_final >= 20) {
-      inversorTipo = "Arriesgado";
+      agresivo.removeAttribute("style")
     } else {
-      inversorTipo = "Moderado";
+      moderado.removeAttribute("style")
     }
-    box_respuesta.innerHTML = `<div> <span> El resultado del test es Perfil ${inversorTipo} </span> </div>`;
   }
 };
 
-// elementos.forEach(function (elemento) {
-//   console.log(`Elementos: ${elemento.value}`);
-//   console.log(`Seleccionado: ${elemento.checked}`);
-// });
 
-// elementos.forEach(function (elemento) {
-//   if (elemento.checked == true) {
-//     console.log(elemento.value);
-//   }
-// })
-
-preguntas_texto.removeAttribute("class");
-lista_de_opciones.removeAttribute("class");
-lista_de_opciones2.removeAttribute("class");
-lista_de_opciones3.removeAttribute("class");

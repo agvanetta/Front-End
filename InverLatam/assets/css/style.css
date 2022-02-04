@@ -763,7 +763,16 @@ section {
   }
 }
 
+.tradingview-widget-copyright{
+  background-color: #131722;
+}
 /* Perfil del inversor ------------------------------------------  */
+
+#CONSERVADOR, #MODERADO, #AGRESIVO{
+  padding: 0px 12px 60px 12px;
+}
+
+
 .texto-encima{
   top:10%;
   position: absolute;
@@ -813,8 +822,55 @@ section {
   transition: 1s;
 }
 
+.siguiente {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ffc451;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
+.siguiente:hover  {
+  background-color: black;
+  color: #ffc451;
+  transition: 1s;
+}
 
+#content-input{
+  padding: 0px 10px;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

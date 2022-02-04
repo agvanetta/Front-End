@@ -46,7 +46,7 @@
           <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
           <li><a class="nav-link scrollto" href="analisistecnico.html">Análisis técnico</a></li>
           <li><a class="nav-link scrollto" href="index.html">Plataformas</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Herramientas</a></li>
+          <li><a class="nav-link scrollto" href="perfilinversor.html">Test del Inversor</a></li>
           <li class="dropdown"><a href="#"><span>Indices</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="./sp-merval.html">SP Merval (ARG)</a></li>
@@ -75,14 +75,12 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Cuestionario</h2>
+          <h2>Test del Inversor</h2>
           <ol>
             <li><a href="index.html">Perfil del Inversor</a></li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
@@ -90,66 +88,210 @@
 
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
-        <div class="row gy-4">
-
+        <div class="row gy-4" id="row">
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
-
         </div>
-
         <div class="portfolio-description">
-          <h4>Seleccioná las respuestas que mejor describan tu situación personal</h4>
-          <p>
+          <h4 class="titulo">Seleccioná las respuestas que mejor describan tu situación personal</h4>
+          <p class="parrafo">
             Todos tenemos diferentes objetivos de inversión, como así también mantenemos distintas actitudes frente al
             riesgo que podemos asumir en el tiempo.
             La presente guía, tiene como objeto orientarte para elegir la mejor alternativa para que tus ahorros se
             conviertan en una buena inversión. Seleccioná las respuestas que mejor describan tu situación personal.
           </p>
-
-          <div id="barra_progreso" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="" aria-valuemax="8" style="width:12.5%;">
+          <div id="barra_progreso" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin=""
+            aria-valuemax="8" style="width:12.5%;">
             1 de 8
-        </div>
-        
+          </div>
         </div>
         <div class="section">
           <div> <span class="pregunta">1- Su edad se encuentra dentro del rango de</span></div>
-          <div class="box_respuesta"> 
-            
-            <div class="respuestas_ind"><input type="radio" id="radio1" name="pregunta" value="1"><label class="respuesta1" for="radio1">Menor
+          <div class="box_respuesta">
+            <div class="respuestas_ind"><input type="radio" checked id="radio1" name="pregunta" value="1"><label
+                id="content-input" class="respuesta1" for="radio1">Menor
                 de 25 años </label></div>
-            <div class="respuestas_ind"><input type="radio" id="radio2" name="pregunta" value="2"><label class="respuesta2" for="radio2">De 25
+            <div class="respuestas_ind"><input type="radio" id="radio2" name="pregunta" value="2"><label
+                id="content-input" class="respuesta2" for="radio2">De 25
                 a 50 años </label></div>
-            <div class="respuestas_ind"><input type="radio" id="radio3" name="pregunta" value="3"><label class="respuesta3" for="radio3">Mayor
+            <div class="respuestas_ind"><input type="radio" id="radio3" name="pregunta" value="3"><label
+                id="content-input" class="respuesta3" for="radio3">Mayor
                 a 50 años </label></div>
-              
-               
           </div>
           <button class="siguiente"> Siguiente </button>
         </div>
       </div>
       </div>
       </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+
+      <!-- ======= Resultados ocultos con style="display: none" ======= -->
+      <!-- ======= C O N S E R V A D O R  ======= -->
+      <section style="display: none" id="CONSERVADOR" class="container" id="portfolio-details" class="portfolio-details">
+        <h2>Resultado del test</h2>
+        <div> <img src="./assets/img/perfilInversor/1.png" class="img-fluid" alt="Perfil conservador"></div>
+        <p>
+          Son personas que buscan rendimientos estables, así sean bajos. Su tolerancia al riesgo es baja. Están
+          pendientes de la rentabilidad y no soportan que su dinero sea expuesto demasiado con la probabilidad de
+          pérdidas. También buscan tener liquidez fácilmente. Es decir, poder vender rápido para recuperar su dinero.
+          <br>
+          Un perfil como este puede interesarse en las inversiones en finca raíz, ya que el dinero se mantiene
+          estable. Su principal desventaja puede ser al momento vender, debido a que se puede demorar un tiempo, todo
+          depende del predio.
+          </div>
+          <br>
+        <h3>Recomendaciones a la hora de invertir</h3>
+        <ul>
+          <li><strong>Criptomonedas</strong>: Debido a su gran volatilidad, es recomendable para este tipo de inversor
+            evitarlas.</li>
+          <li><strong>Efectivo</strong>: Ahorrar en monedas "estables" como el dolar o el euro para no perder poder de
+            compra.</li>
+          <li><strong>Trading</strong>: Evitar abrir posiciones buscando ganancias en el corto plazo en activos que no
+            coinciden con el perfil.</li>
+          <li><strong>Producto Estrella</strong>: Instrumentos de renta fija como plazos fijos, preferentemente BADLAR o
+            UVA.</li>
+        </ul>
+        <div>
+          <center><img id="centrar" src="./assets/img/perfilInversor/s1.png" class="img-fluid" alt="Perfil conservador2"
+              height="500px" width="1100px"> </center>
+        </div>
+        <h3>Renta Variable</h3>
+        <p>Se debe destinar poco capital a este tipo de instrumento financiero ya que no asegura tener rentabilidad
+          positiva o neutra, lo cual suele incomodar al inversor y esto lo puede llevar a tener perdidas en su capital
+          por cerrar posiciones antes de tiempo, y por pagar comisiones innecesarias por apertura y cierre de las
+          mismas.
+          <br>
+          Entre los activos a incorporar a su lista de seguimiento se encuentran empresas "VALUE" quienes ya tienen una
+          posición consolidad en el mercado y les es más difícil su expansión. Ej:
+        </p>
+        </section>
+
+        <!-- ======= M O D E R A D O  ======= -->
+      <section style="display: none" id="MODERADO" class="container" id="portfolio-details" class="portfolio-details">
+        <h2>Resultado del test</h2>
+        <div> <img src="./assets/img/perfilInversor/2.png" class="img-fluid" alt="Perfil Moderado"></div>
+        <p>
+          Son personas que buscan rendimientos estables, así sean bajos. Su tolerancia al riesgo es baja. Están
+          pendientes de la rentabilidad y no soportan que su dinero sea expuesto demasiado con la probabilidad de
+          pérdidas. También buscan tener liquidez fácilmente. Es decir, poder vender rápido para recuperar su dinero.
+          <br>
+          Un perfil como este puede interesarse en las inversiones en finca raíz, ya que el dinero se mantiene
+          estable. Su principal desventaja puede ser al momento vender, debido a que se puede demorar un tiempo, todo
+          depende del predio.
+          </div>
+          <br>
+        <h3>Recomendaciones a la hora de invertir</h3>
+        <ul>
+          <li><strong>Criptomonedas</strong>: Debido a su gran volatilidad, es recomendable para este tipo de inversor
+            evitarlas.</li>
+          <li><strong>Efectivo</strong>: Ahorrar en monedas "estables" como el dolar o el euro para no perder poder de
+            compra.</li>
+          <li><strong>Trading</strong>: Evitar abrir posiciones buscando ganancias en el corto plazo en activos que no
+            coinciden con el perfil.</li>
+          <li><strong>Producto Estrella</strong>: Instrumentos de renta fija como plazos fijos, preferentemente BADLAR o
+            UVA.</li>
+        </ul>
+        <div>
+          <center><img id="centrar" src="./assets/img/perfilInversor/data3.png" class="img-fluid" alt="Perfil conservador2"
+              height="500px" width="1100px"> </center>
+        </div>
+        <h3>Renta Variable</h3>
+        <p>Se debe destinar poco capital a este tipo de instrumento financiero ya que no asegura tener rentabilidad
+          positiva o neutra, lo cual suele incomodar al inversor y esto lo puede llevar a tener perdidas en su capital
+          por cerrar posiciones antes de tiempo, y por pagar comisiones innecesarias por apertura y cierre de las
+          mismas.
+          <br>
+          Entre los activos a incorporar a su lista de seguimiento se encuentran empresas "VALUE" quienes ya tienen una
+          posición consolidad en el mercado y les es más difícil su expansión. Ej:
+        </p>
+        </section>
+
+        <!-- ======= A G R E S I V O  ======= -->
+      <section style="display: none" id="AGRESIVO" class="container" id="portfolio-details" class="portfolio-details">
+        <h2>Resultado del test</h2>
+        <div> <img src="./assets/img/perfilInversor/3.png" class="img-fluid" alt="Perfil Agresivo"></div>
+        <p>
+          Son personas que buscan rendimientos estables, así sean bajos. Su tolerancia al riesgo es baja. Están
+          pendientes de la rentabilidad y no soportan que su dinero sea expuesto demasiado con la probabilidad de
+          pérdidas. También buscan tener liquidez fácilmente. Es decir, poder vender rápido para recuperar su dinero.
+          <br>
+          Un perfil como este puede interesarse en las inversiones en finca raíz, ya que el dinero se mantiene
+          estable. Su principal desventaja puede ser al momento vender, debido a que se puede demorar un tiempo, todo
+          depende del predio.
+          </div>
+          <br>
+        <h3>Recomendaciones a la hora de invertir</h3>
+        <ul>
+          <li><strong>Criptomonedas</strong>: Debido a su gran volatilidad, es recomendable para este tipo de inversor
+            evitarlas.</li>
+          <li><strong>Efectivo</strong>: Ahorrar en monedas "estables" como el dolar o el euro para no perder poder de
+            compra.</li>
+          <li><strong>Trading</strong>: Evitar abrir posiciones buscando ganancias en el corto plazo en activos que no
+            coinciden con el perfil.</li>
+          <li><strong>Producto Estrella</strong>: Instrumentos de renta fija como plazos fijos, preferentemente BADLAR o
+            UVA.</li>
+        </ul>
+        <div>
+          <center><img id="centrar" src="./assets/img/perfilInversor/data1.png" class="img-fluid" alt="Perfil conservador2"
+              height="500px" width="1100px"> </center>
+        </div>
+        <h3>Renta Variable</h3>
+        <p>Se debe destinar poco capital a este tipo de instrumento financiero ya que no asegura tener rentabilidad
+          positiva o neutra, lo cual suele incomodar al inversor y esto lo puede llevar a tener perdidas en su capital
+          por cerrar posiciones antes de tiempo, y por pagar comisiones innecesarias por apertura y cierre de las
+          mismas.
+          <br>
+          Entre los activos a incorporar a su lista de seguimiento se encuentran empresas "VALUE" quienes ya tienen una
+          posición consolidad en el mercado y les es más difícil su expansión. Ej:
+        </p>
+        </section>
+        <!-- ======= Acciones Section ======= -->
+        <section id="op" id="clients" class="clients2">
+
+          <div class="container" data-aos="zoom-in">
+            <span class="fst-italic">
+              Acciones perfil conservador..
+              <br><br>
+            </span>
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/mcdonalds.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/cocacola.png" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/sp.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/bh.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/w.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/cat.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/perfilInversor/ibm.png" class="img-fluid" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- End perfil Moderado -->
+
+
+
+      </section><!-- End Portfolio Details Section -->
+
+
+
+
+
+
 
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3>INVER<span>.</span></h3>
@@ -171,7 +313,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Enlaces útiles</h4>
             <ul>
@@ -182,7 +323,6 @@
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Contacto</a></li>
             </ul>
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Otros proyectos</h4>
             <ul>
