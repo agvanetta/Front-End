@@ -6,7 +6,7 @@ window.onload = function () {
         return respuesta.json();
       })
       .then(function (informacion) {
-        console.log(informacion[0].casa.nombre);
+       // console.log(informacion[0].casa.nombre);
         var dolarCompra = informacion[0].casa.compra;
         var dolarVenta =  informacion[0].casa.venta;
         var dolarBCompra = informacion[1].casa.compra;
@@ -16,38 +16,27 @@ window.onload = function () {
 
 
         document.getElementById("dolarOficial").innerHTML += `: $${dolarCompra} / $${dolarVenta}`
-        document.getElementById("dolarBlue").innerHTML += `: Compra $ ${dolarBCompra} - Venta $ ${dolarBVenta}`
-        document.getElementById("dolarBolsa").innerHTML += `: C $ ${dolarMCompra} - V $ ${dolarMVenta}`
+        //document.getElementById("dolarBlue").innerHTML += `: Compra $ ${dolarBCompra} - Venta $ ${dolarBVenta}`
+       //document.getElementById("dolarBolsa").innerHTML += `: C $ ${dolarMCompra} - V $ ${dolarMVenta}`
 
       })
       .catch(function (error) {
         // Ante cualquier error
         console.log(error);
       });
+    }
+  //     const urlBTC = "https://blockchain.info/ticker";
   
-      const urlBTC = "https://blockchain.info/ticker";
-  
-      fetch(urlBTC)
-        .then(function (respuesta) {
-          return respuesta.json();
-        })
-        .then(function (informacion) {
-          var precioBtcUsd = informacion.USD.sell;
-          document.getElementById("BTC").innerHTML += `: $ ${precioBtcUsd}`
-
-
-        })
-        .catch(function (error) {
-          // Ante cualquier error
-          console.log(error);
-        });
-
-
-        // Write index
-
-        document.getElementById("dolarOficial").innerHTML += `Dolar : ${dolarCompra}`
-
-
-
-  };
-  
+  //     fetch(urlBTC)
+  //       .then(function (respuesta) {
+  //         return respuesta.json();
+  //       })
+  //       .then(function (informacion) {
+  //         var precioBtcUsd = informacion.USD.sell;
+  //         document.getElementById("BTC").innerHTML += `: $ ${precioBtcUsd}`
+  //       })
+  //       .catch(function (error) {
+  //         // Ante cualquier error
+  //         console.log(error);
+  //       });
+  // };

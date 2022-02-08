@@ -76,14 +76,10 @@ boton_siguiente.onclick = () => {
       moderado.removeAttribute("style")
     }
   }
-
   sessionStorage.setItem("resultadoDelTest", resultado_final);
   console.log(sessionStorage);
   sessionStorage.getItem("resultadoDelTest")
-
 };
-
-
 
 
 if (sessionStorage.getItem("resultadoDelTest") != null){
