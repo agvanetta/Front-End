@@ -1,3 +1,4 @@
+// Capturamos BOTONES //
 const boton_siguiente = document.querySelector(".siguiente");
 const preguntas_texto = document.querySelector(".pregunta");
 const lista_de_opciones = document.querySelector(".respuesta1");
@@ -19,8 +20,13 @@ const conservador = document.querySelector("#CONSERVADOR")
 const moderado = document.querySelector("#MODERADO")
 const agresivo = document.querySelector("#AGRESIVO")
 
+// f i n  Capturamos BOTONES //
+
 var i = 1;
 var resultado_final = 0;
+
+
+
 
 boton_siguiente.onclick = () => {
   // Si el indice es menor a la cantida de preguntas
@@ -70,6 +76,31 @@ boton_siguiente.onclick = () => {
       moderado.removeAttribute("style")
     }
   }
+
+  localStorage.setItem("resultadoDelTest", resultado_final);
+  console.log(localStorage);
+  localStorage.getItem("resultadoDelTest")
+
 };
 
 
+
+
+if (sessionStorage.getItem("resultadoDelTest") != null){
+  // Sacar
+box_respuesta.setAttribute("style", "display: none");
+barra_progreso.setAttribute("style", "display: none");
+parrafo.setAttribute("style", "display: none");
+titulo.setAttribute("style", "display: none");
+row.setAttribute("style", "display: none");
+  console.log("funciona")
+  var res_fin = parseInt(sessionStorage.resultadoDelTest)
+  if (res_fin <= 13) {
+    conservador.removeAttribute("style")
+    //window.open("modelotipo.html")
+  } else if (res_fin >= 20) {
+    agresivo.removeAttribute("style")
+  } else {
+    moderado.removeAttribute("style")
+  }
+}
