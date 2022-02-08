@@ -77,9 +77,9 @@ boton_siguiente.onclick = () => {
     }
   }
 
-  localStorage.setItem("resultadoDelTest", resultado_final);
-  console.log(localStorage);
-  localStorage.getItem("resultadoDelTest")
+  sessionStorage.setItem("resultadoDelTest", resultado_final);
+  console.log(sessionStorage);
+  sessionStorage.getItem("resultadoDelTest")
 
 };
 
