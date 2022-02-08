@@ -25,9 +25,6 @@ const agresivo = document.querySelector("#AGRESIVO")
 var i = 1;
 var resultado_final = 0;
 
-
-
-
 boton_siguiente.onclick = () => {
   // Si el indice es menor a la cantida de preguntas
   if (i < preguntas.length) {
@@ -76,12 +73,11 @@ boton_siguiente.onclick = () => {
       moderado.removeAttribute("style")
     }
   }
+  // Guardar en Local o Session Storage:
   sessionStorage.setItem("resultadoDelTest", resultado_final);
-  console.log(sessionStorage);
-  sessionStorage.getItem("resultadoDelTest")
 };
 
-
+// Utilizar resultado del test en caso de que getItem tenga resultados.
 if (sessionStorage.getItem("resultadoDelTest") != null){
   // Sacar
 box_respuesta.setAttribute("style", "display: none");
@@ -89,7 +85,6 @@ barra_progreso.setAttribute("style", "display: none");
 parrafo.setAttribute("style", "display: none");
 titulo.setAttribute("style", "display: none");
 row.setAttribute("style", "display: none");
-  console.log("funciona")
   var res_fin = parseInt(sessionStorage.resultadoDelTest)
   if (res_fin <= 13) {
     conservador.removeAttribute("style")
