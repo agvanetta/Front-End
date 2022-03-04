@@ -28,4 +28,4 @@ InverLatam : https://agvanetta.github.io/Front-End/InverLatam (Consume info de A
 
 # FrontEnd III
 
-Inicia Marzo 2022
+Trabajando con proyectos en los cuales se implementa REACT
