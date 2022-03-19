@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Apple",
+    "marketCap": "$2.67 T",
+    "country": "USA",
+    "ticker": "AAPL",
+    "url_image": "https://w7.pngwing.com/pngs/695/105/png-transparent-apple-logo-business-apple-logo-outline-heart-logo-computer-wallpaper-thumbnail.png"
+  },
+  {
+    "company": "Microsoft",
+    "marketCap": "$2.25 T",
+    "country": "USA",
+    "ticker": "MSFT",
+    "url_image": "https://pbs.twimg.com/profile_images/1268172052084805637/id0ibXhu_400x400.jpg"
+  },
+  {
+    "company": "Google",
+    "marketCap": "$1.74 T",
+    "country": "USA",
+    "ticker": "GOOG",
+    "url_image": "https://www.trecebits.com/wp-content/uploads/2015/09/google.jpg"
+  }
+]
