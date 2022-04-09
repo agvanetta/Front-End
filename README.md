@@ -13,7 +13,7 @@ Proyectos HTML + CSS
 
 5- Pagina con formulario de Login: https://agvanetta.github.io/Front-End/P7FormularioHeroes
 
-6- Pagina de Inversiones en bolsa :  https://agvanetta.github.io/Front-End/Proyecto
+6 - Pagina de Inversiones en bolsa :  https://agvanetta.github.io/Front-End/Proyecto
 
 # FrontEnd II
 Proyectos HTML + CSS + JS
@@ -24,8 +24,16 @@ Proyecto con Formulario : https://agvanetta.github.io/Front-End/js-entregable/
 
 Cards "Modo Oscuro" : https://agvanetta.github.io/Front-End/js-pocoyo/
 
+Pagina de tareas (To do) :  https://agvanetta.github.io/Front-End/ToDo_inicial
+(Usuario de prueba: todotest@test.com   / 12345678 )
+Documentacion API : https://ctd-fe2-todo.herokuapp.com/#/users/registerUser
+
 InverLatam : https://agvanetta.github.io/Front-End/InverLatam (Consume info de API)
 
 # FrontEnd III
 
 1- Primer proyecto en react Semana 3: https://agvanetta.github.io/firstproyectreact/
+
+2- Amazon Clone : https://agvanetta.github.io/amazon-clone/
+
+3- V-Wallet : https://github.com/agvanetta/Wallet
