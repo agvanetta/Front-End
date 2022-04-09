@@ -1,0 +1,6 @@
+todotest@test.com
+12345678
+
+
+link__documentacion
+https://ctd-fe2-todo.herokuapp.com/#/users/registerUser
